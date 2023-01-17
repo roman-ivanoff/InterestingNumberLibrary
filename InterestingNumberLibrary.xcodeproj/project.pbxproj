@@ -10,6 +10,14 @@
 		FD0143A629763459004A3EF3 /* InterestingNumberLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD01439D29763458004A3EF3 /* InterestingNumberLibrary.framework */; };
 		FD0143AB29763459004A3EF3 /* InterestingNumberLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143AA29763459004A3EF3 /* InterestingNumberLibraryTests.swift */; };
 		FD0143AC29763459004A3EF3 /* InterestingNumberLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0143A029763458004A3EF3 /* InterestingNumberLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD0143BA29763480004A3EF3 /* Regexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143B529763480004A3EF3 /* Regexes.swift */; };
+		FD0143BB29763480004A3EF3 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143B629763480004A3EF3 /* Fact.swift */; };
+		FD0143BC29763480004A3EF3 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143B729763480004A3EF3 /* Rules.swift */; };
+		FD0143BD29763480004A3EF3 /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143B829763480004A3EF3 /* TextFieldModel.swift */; };
+		FD0143BE29763480004A3EF3 /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143B929763480004A3EF3 /* NumberModel.swift */; };
+		FD0143C1297634E5004A3EF3 /* InputRuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143C0297634E5004A3EF3 /* InputRuleProtocol.swift */; };
+		FD0143C5297634FC004A3EF3 /* NumbersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143C3297634FC004A3EF3 /* NumbersService.swift */; };
+		FD0143C6297634FC004A3EF3 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0143C4297634FC004A3EF3 /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,14 @@
 		FD0143A029763458004A3EF3 /* InterestingNumberLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterestingNumberLibrary.h; sourceTree = "<group>"; };
 		FD0143A529763458004A3EF3 /* InterestingNumberLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterestingNumberLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0143AA29763459004A3EF3 /* InterestingNumberLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingNumberLibraryTests.swift; sourceTree = "<group>"; };
+		FD0143B529763480004A3EF3 /* Regexes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexes.swift; sourceTree = "<group>"; };
+		FD0143B629763480004A3EF3 /* Fact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		FD0143B729763480004A3EF3 /* Rules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		FD0143B829763480004A3EF3 /* TextFieldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
+		FD0143B929763480004A3EF3 /* NumberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
+		FD0143C0297634E5004A3EF3 /* InputRuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputRuleProtocol.swift; sourceTree = "<group>"; };
+		FD0143C3297634FC004A3EF3 /* NumbersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersService.swift; sourceTree = "<group>"; };
+		FD0143C4297634FC004A3EF3 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,9 @@
 		FD01439F29763458004A3EF3 /* InterestingNumberLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				FD0143C7297634FF004A3EF3 /* Services */,
+				FD0143C2297634E9004A3EF3 /* Protocols */,
+				FD0143BF29763485004A3EF3 /* Models */,
 				FD0143A029763458004A3EF3 /* InterestingNumberLibrary.h */,
 			);
 			path = InterestingNumberLibrary;
@@ -80,6 +99,43 @@
 				FD0143AA29763459004A3EF3 /* InterestingNumberLibraryTests.swift */,
 			);
 			path = InterestingNumberLibraryTests;
+			sourceTree = "<group>";
+		};
+		FD0143BF29763485004A3EF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD0143B629763480004A3EF3 /* Fact.swift */,
+				FD0143B929763480004A3EF3 /* NumberModel.swift */,
+				FD0143B529763480004A3EF3 /* Regexes.swift */,
+				FD0143B729763480004A3EF3 /* Rules.swift */,
+				FD0143B829763480004A3EF3 /* TextFieldModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD0143C2297634E9004A3EF3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD0143C0297634E5004A3EF3 /* InputRuleProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD0143C7297634FF004A3EF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FD0143C829763504004A3EF3 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FD0143C829763504004A3EF3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FD0143C3297634FC004A3EF3 /* NumbersService.swift */,
+				FD0143C4297634FC004A3EF3 /* ServiceError.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +200,7 @@
 				TargetAttributes = {
 					FD01439C29763458004A3EF3 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 					FD0143A429763458004A3EF3 = {
 						CreatedOnToolsVersion = 14.1;
@@ -191,6 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0143C6297634FC004A3EF3 /* ServiceError.swift in Sources */,
+				FD0143BA29763480004A3EF3 /* Regexes.swift in Sources */,
+				FD0143BD29763480004A3EF3 /* TextFieldModel.swift in Sources */,
+				FD0143C5297634FC004A3EF3 /* NumbersService.swift in Sources */,
+				FD0143C1297634E5004A3EF3 /* InputRuleProtocol.swift in Sources */,
+				FD0143BE29763480004A3EF3 /* NumberModel.swift in Sources */,
+				FD0143BB29763480004A3EF3 /* Fact.swift in Sources */,
+				FD0143BC29763480004A3EF3 /* Rules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +401,7 @@
 		FD0143B029763459004A3EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -345,6 +411,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +422,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +431,7 @@
 		FD0143B129763459004A3EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -372,6 +441,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +460,7 @@
 		FD0143B329763459004A3EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,6 +476,7 @@
 		FD0143B429763459004A3EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
